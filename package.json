@@ -1,0 +1,64 @@
+{
+	"name": "asset-price-mcp",
+	"version": "1.0.0",
+	"description": "An MCP-compatible service that provides real-time asset prices including precious metals, cryptocurrencies, and more",
+	"type": "module",
+	"main": "./build/index.js",
+	"types": "./build/index.d.ts",
+	"bin": {
+		"asset-price": "./build/index.js"
+	},
+	"scripts": {
+		"build": "tsc && chmod 755 build/index.js",
+		"test": "node --test",
+		"lint": "eslint src/**/*.ts",
+		"prepublishOnly": "npm run build",
+		"start": "node build/index.js"
+	},
+	"keywords": [
+		"mcp",
+		"asset",
+		"price",
+		"gold",
+		"silver",
+		"bitcoin",
+		"crypto",
+		"financial",
+		"api",
+		"model-context-protocol"
+	],
+	"author": {
+		"name": "mk965",
+		"email": "me@mengke.me"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mk965/asset-price-mcp"
+	},
+	"bugs": {
+		"url": "https://github.com/mk965/asset-price-mcp/issues"
+	},
+	"homepage": "https://github.com/mk965/asset-price-mcp#readme",
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.7.0",
+		"zod": "^3.24.2"
+	},
+	"devDependencies": {
+		"@types/node": "^22.13.10",
+		"typescript": "^5.8.2",
+		"eslint": "^8.56.0",
+		"@typescript-eslint/eslint-plugin": "^6.21.0",
+		"@typescript-eslint/parser": "^6.21.0"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"files": [
+		"build",
+		"README.md",
+		"README.zh.md",
+		"README.ja.md",
+		"LICENSE"
+	]
+}
