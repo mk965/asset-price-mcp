@@ -12,7 +12,7 @@
 
 许多代码编辑器和其他 AI 客户端使用配置文件来管理 MCP 服务器。
 
-可以通过在配置文件中添加以下内容来配置 `assets-price-mcp` 服务器。
+可以通过在配置文件中添加以下内容来配置 `asset-price-mcp` 服务器。
 
 ### MacOS/Linux
 
@@ -21,7 +21,7 @@
   "mcpServers": {
     "Asset Price MCP": {
       "command": "npx",
-      "args": ["-y", "assets-price-mcp"]
+      "args": ["-y", "asset-price-mcp"]
     }
   }
 }
@@ -34,7 +34,7 @@
   "mcpServers": {
     "Asset Price MCP": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "assets-price-mcp"]
+      "args": ["/c", "npx", "-y", "asset-price-mcp"]
     }
   }
 }

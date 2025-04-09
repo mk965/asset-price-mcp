@@ -12,7 +12,7 @@ asset-price-mcp は現在、初期開発段階にあることにご注意くだ�
 
 多くのコードエディタや他のAIクライアントはMCPサーバーを管理するために設定ファイルを使用します。
 
-設定ファイルに以下を追加することで `assets-price-mcp` サーバーを設定できます。
+設定ファイルに以下を追加することで `asset-price-mcp` サーバーを設定できます。
 
 ### MacOS/Linux
 
@@ -21,7 +21,7 @@ asset-price-mcp は現在、初期開発段階にあることにご注意くだ�
   "mcpServers": {
     "Asset Price MCP": {
       "command": "npx",
-      "args": ["-y", "assets-price-mcp"]
+      "args": ["-y", "asset-price-mcp"]
     }
   }
 }
@@ -34,7 +34,7 @@ asset-price-mcp は現在、初期開発段階にあることにご注意くだ�
   "mcpServers": {
     "Asset Price MCP": {
       "command": "cmd",
-      "args": ["/c", "npx", "-y", "assets-price-mcp"]
+      "args": ["/c", "npx", "-y", "asset-price-mcp"]
     }
   }
 }
