@@ -61,7 +61,7 @@ const apiCache = new SimpleCache();
 
 const server = new McpServer({
   name: "asset-price",
-  version: "1.0.0",
+  version: "1.0.1",
 });
 
 async function fetchWithTimeout(url: string, options: RequestInit = {}, timeout = API_TIMEOUT): Promise<Response> {
