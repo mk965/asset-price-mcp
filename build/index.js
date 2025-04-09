@@ -1,3 +1,8 @@
+#!/usr/bin/env node
+// Node.js v16兼容性修复
+import nodeFetch from 'node-fetch';
+// @ts-ignore
+const fetchToUse = globalThis.fetch || nodeFetch;
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
@@ -41,14 +46,15 @@ class SimpleCache {
 }
 const apiCache = new SimpleCache();
 const server = new McpServer({
-    name: "asset-price",
-    version: "1.0.1",
+    name: "asset-price-mcp",
+    version: "1.0.2",
 });
 async function fetchWithTimeout(url, options = {}, timeout = API_TIMEOUT) {
     const controller = new AbortController();
     const id = setTimeout(() => controller.abort(), timeout);
     try {
-        const response = await fetch(url, {
+        // @ts-ignore - 使用通用fetch实现
+        const response = await fetchToUse(url, {
             ...options,
             signal: controller.signal
         });
