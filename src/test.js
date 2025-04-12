@@ -48,7 +48,7 @@ test('MCP server starts and responds to requests', async (t) => {
     method: "tools/call",
     params: {
       name: "get_asset_price",
-      arguments: { random_string: "dummy" }
+      arguments: {}
     },
     id: 1
   };

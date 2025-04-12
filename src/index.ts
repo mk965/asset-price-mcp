@@ -68,7 +68,7 @@ const apiCache = new SimpleCache();
 
 const server = new McpServer({
   name: "asset-price-mcp",
-  version: "1.0.2",
+  version: "1.0.3",
 });
 
 async function fetchWithTimeout(url: string, options: any = {}, timeout = API_TIMEOUT) {
@@ -140,9 +140,7 @@ function formatAssetPrice(price: AssetPrice): string {
 server.tool(
   "get_asset_price",
   "Retrieves current pricing information for various assets including precious metals and cryptocurrencies",
-  { 
-    random_string: z.string().optional().describe("Dummy parameter for no-parameter tools")
-  },
+  {},
   async () => {
     try {
       const symbols = await fetchApiData(

@@ -47,7 +47,7 @@ class SimpleCache {
 const apiCache = new SimpleCache();
 const server = new McpServer({
     name: "asset-price-mcp",
-    version: "1.0.2",
+    version: "1.0.3",
 });
 async function fetchWithTimeout(url, options = {}, timeout = API_TIMEOUT) {
     const controller = new AbortController();
@@ -109,9 +109,7 @@ function formatAssetPrice(price) {
         "---",
     ].join("\n");
 }
-server.tool("get_asset_price", "Retrieves current pricing information for various assets including precious metals and cryptocurrencies", {
-    random_string: z.string().optional().describe("Dummy parameter for no-parameter tools")
-}, async () => {
+server.tool("get_asset_price", "Retrieves current pricing information for various assets including precious metals and cryptocurrencies", {}, async () => {
     try {
         const symbols = await fetchApiData(`${GOLD_API_BASE}/symbols`, z.array(AssetSymbolSchema));
         if (!symbols?.length) {

@@ -1,6 +1,6 @@
 {
 	"name": "asset-price-mcp",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "An MCP-compatible service that provides real-time asset prices including precious metals, cryptocurrencies, and more",
 	"type": "module",
 	"main": "./build/index.js",
