@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/mk965-asset-price-mcp-badge.png)](https://mseep.ai/app/mk965-asset-price-mcp)
+
 # Asset Price MCP Server (asset-price-mcp)
 
 [![smithery badge](https://smithery.ai/badge/@mk965/asset-price-mcp)](https://smithery.ai/server/@mk965/asset-price-mcp)
