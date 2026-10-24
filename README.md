@@ -1,6 +1,6 @@
 # Asset Price MCP Server (asset-price-mcp)
 
-[![smithery badge](https://smithery.ai/badge/@mk965/asset-price-mcp)](https://smithery.ai/server/@mk965/asset-price-mcp)
+[![LightNow capabilities](https://lightnow.ai/badge/io.github.mk965/asset-price-mcp)](https://lightnow.ai/servers/io.github.mk965/asset-price-mcp)
 [English](#asset-price-mcp-server-asset-price-mcp) | [中文](./README.zh.md) | [日本語](./README.ja.md)
 
 ## Overview
